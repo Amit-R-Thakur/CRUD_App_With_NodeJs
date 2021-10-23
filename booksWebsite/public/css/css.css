@@ -48,7 +48,7 @@
 }
 .content ul a:active {
   color: rgba(0, 0, 255, 0.795);
-  border-bottom: 2px solid black;
+  border-bottom: 5px solid black;
 }
 
 /* .socialmedia {

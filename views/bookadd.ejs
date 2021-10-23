@@ -1,4 +1,25 @@
  <%- include ("./partial/nevbar.ejs")  %>
-<div>
-    hello from the add book site
+<div class="addmain">
+    <div class="bookadd">
+        <form method="post">        <div class="bookHeading">
+            <h1>Add Books Details</h1>
+        </div>
+        <div class="bookDetails">
+            <input type="text" name="bname" placeholder="Book Name"/>
+            <input type="text" name="bauthor" placeholder="Book Author"/>
+            <input type="text" name="bpublisher" placeholder="Book publisher"/>
+            <input type="text" name="bprice" placeholder="Book price"/><br>
+            <h1>Upload Book's Image</h1><input id="file" type="file" name="image"/>
+
+
+        </div>
+        <div class="bookSubmit">
+            <button type="submit">ADD BOOK</button> <button> Cancle</button>
+        </div>
+    </form>
+
+
+    </div>
+    
 </div>
+<link rel="stylesheet" href="css/addbook.css">

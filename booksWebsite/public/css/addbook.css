@@ -1,0 +1,72 @@
+.addmain {
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.966);
+  height: calc(100vh - 90px);
+  position: relative;
+}
+
+.bookadd {
+  position: absolute;
+  left: 33%;
+  right: 33%;
+  top: 5%;
+  bottom: 5%;
+  background-color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 15% 1fr 15%;
+}
+.bookHeading {
+  /* background-color: violet; */
+  text-align: center;
+}
+.bookHeading h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: underline;
+  margin-top: 2.7%;
+}
+.bookDetails {
+  text-align: center;
+  /* background-color: yellowgreen; */
+  padding: 2%;
+}
+.bookDetails input {
+  color: black;
+  width: 70%;
+  padding: 10px;
+  margin: 2.5%;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.bookDetails input:focus {
+  outline: none;
+}
+.bookDetails h1 {
+  font-size: 1.5rem;
+}
+#file {
+  font-size: 20px;
+}
+.bookSubmit {
+  /* background-color: brown; */
+  text-align: center;
+}
+.bookSubmit button {
+  width: 30%;
+  margin: 2%;
+  height: 60%;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(137, 43, 226, 0.726);
+  color: aliceblue;
+}
