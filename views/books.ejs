@@ -1,20 +1,16 @@
-<%- include ("./partial/nevbar.ejs")  %>
-<!-- <h1><%=data.length %></h1> -->
+<%- include ("./partial/nevbar.ejs") %>
 <div class="allbooksmain">
-    <% data.forEach((data)=>{ %>
-    <div class="bookCard">
-        <div class="image">
-            <img src="books-1635012182650-Screenshot (5).png">
-        </div>
-         <div class="header"><h1><%= data.name %></h1></div>
-         <div class="authorName"><h3>Author:<%= data.author %></h3></div>
-         <div class="publisherName"><h3>Publisher:<%= data.publisher %></h3></div>
-         <div class="price"><h2>Price:<%= data.price %></h2></div>
-         <div class="buyBtn"><button>Buy</button></div>
-        
-
+  <% data.forEach((data)=>{ %>
+  <div class="bookCard">
+    <div class="image">
+      <img src="<%=data.image%>" />
     </div>
-<% })%>
-    
+    <div class="header"><h1><%= data.name %></h1></div>
+    <div class="authorName"><h3>Author:<%= data.author %></h3></div>
+    <div class="publisherName"><h3>Publisher:<%= data.publisher %></h3></div>
+    <div class="price"><h2>Price:<%= data.price %></h2></div>
+    <div class="buyBtn"><button>Buy</button></div>
+  </div>
+  <% })%>
 </div>
-<link rel="stylesheet" href="css/books.css">
+<link rel="stylesheet" href="css/books.css" />

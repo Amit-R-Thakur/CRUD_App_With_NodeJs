@@ -1,0 +1,23 @@
+<%- include ("./partial/nevbar.ejs") %>
+<div class="addmain">
+  <div class="bookadd">
+    <form method="post"  enctype="multipart/form-data">
+      <div class="bookHeading">
+        <h1>Edit Books Details</h1>
+      </div>
+      <div class="bookDetails">
+        <input type="text" name="name" value="<%=data.name%>" />
+        <input type="text" name="author" value="<%=data.author%>" />
+        <input type="text" name="publisher" value="<%=data.publisher%>" />
+        <input type="text" name="price" value="<%=data.price%>" /><br />
+        <h1>Upload Book's Image</h1>
+        <input id="file" type="file" name="image" /><br/>
+        <!-- <img height="100px" width="100px" src="../<%=data.image%>"/> -->
+      </div>
+      <div class="bookSubmit">
+        <button type="submit">Update BOOK</button> <button>Cancle</button>
+      </div>
+    </form>
+  </div>
+</div>
+<link rel="stylesheet" href="../css/addbook.css" />
